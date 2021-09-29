@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 from sklearn.neighbors import KernelDensity
+from sklearn.model_selection import GridSearchCV
 
 from scipy.optimize import fmin
 from scipy.special import erf
@@ -62,6 +63,25 @@ def preprocess_data(prices, lookback):
 
 
 def estimate_normal(price, returns, probability, lookforward):
+    """Estimate price interval with normal distribution.
+
+    Parameters
+    ----------
+    price : float
+        Last price.
+    returns : pandas.Series
+        Log-returns.
+    probability : float
+        Confidence interval.
+    lookforward : int
+        How many days in the future.
+
+    Returns
+    -------
+    price_min : float
+    price_max : float
+        Minimum and maximum estimated prices.
+    """
 
     mean = np.mean(returns)
     sigma = np.std(returns)
