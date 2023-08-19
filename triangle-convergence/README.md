@@ -5,7 +5,7 @@ Before I jumped to prove it, I wanted to validate the following hypothesis:
 > These three masses have an associated center of mass G.
 > Let there be a sequence of triangles constructed with the following rule:
 > - The first triangle is the original triangle.
-> - The second triangle is formed by connecting the three midpoints of the origianl triangle.
+> - The second triangle is formed by connecting the three midpoints of the original triangle.
 > - The third triangle is formed by connecting the three midpoints of the previous triangle.
 > - And so on.
 >
