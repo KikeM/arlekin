@@ -1,3 +1,7 @@
+"""
+References:
+- https://en.wikipedia.org/wiki/Circumcircle#Circumcenter_coordinates
+"""
 import matplotlib.pyplot as plt
 import numpy as np
 from rich import print
@@ -189,4 +193,4 @@ if __name__ == "__main__":
     ax.grid()
 
     plt.tight_layout()
-    plt.show()
+    plt.savefig("nagore_point.png")
